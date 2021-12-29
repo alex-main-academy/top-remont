@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Топ-ремонт</title>
+    <!--  -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/media-queries.css">
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <div class="header__menu">
-                <div class="header__logo">
-                    <img src="./img/logo.png" alt="header logo">
-                </div>
+            <nav class="header__menu">
+                <a class="header__logo">
+                    <!-- TODO: пункт 5.5 критериев явные размеры изображений -->
+                    <img src="./img/logo.png" alt="header logo" width="124">
+                </a>
                 <div class="header__link">
                     <ul>
                         <li><a href="#">Ремонт квартир</a></li>
@@ -27,7 +29,13 @@
                     </ul>
                 </div>
                 <div class="header__social">
-                    <img src="./img/viber-icon.png" alt="viber-icon" class="viber-icon">
+                    <!-- TODO: пункт 1.1 критериев, соц.сети -->
+                    <a href="" target="_blank">
+                        <!-- TODO: это декоративное изображение, его место в css -->
+                        <img src="./img/viber-icon.png" alt="viber-icon" class="viber-icon">
+                        <span class="visually-hidden">Написать в вайбер</span>
+                    </a>
+                    <!-- FIXME -->
                     <img src="./img/telegram-icon.png" alt="telegram-icon" class="telegram-icon">
                 </div>
                 <div class="header__button">
@@ -35,14 +43,16 @@
                 </div>
                 <div class="header__phone">
                     <div class="header__block">
-                        <p>+7 (495) 456-87-89</p>
+                        <!-- TODO: пункт 1.1 критериев, ссылки на телефон -->
+                        <a href='tel:+74954568789'>+7 (495) 456-87-89</a>
                     </div>
                     <div class="header__block">
+                        <!-- FIXME: лишний запрос к картинке которую можно реализовать средствами CSS -->
                         <img src="./img/greenElipse-icon.png" alt="icon">
                         <p>Специалист онлайн</p>
                     </div>
                 </div>
-            </div>
+            </nav>
 
             <div class="header__title">
                 <h1>Разрабатываем дизайн-проекты <br> и выполняем ремонт любой сложности, учитывая особенности каждого обьекта</h1>
@@ -51,6 +61,7 @@
             <div class="header__info">
                 <div class="header__info-block">
                     <div class="image">
+                        <!-- FIXME -->
                         <img src="./img/whiteElipse-icon.png" alt="">
                     </div>
                     <div class="text">
@@ -81,6 +92,7 @@
             </div>
 
             <div class="header__price">
+                <!-- FIXME: img in CSS -->
                 <img src="./img/headerHouse-icon.png" alt="home-icon">
                 <a href="#">Рассчитать стоимость и выбрать подарок</a>
                 <p>Рассчитаем точную стоимость и сроки ремонта для вас + подарок!</p>
@@ -101,30 +113,36 @@
             </div>
             <div class="services__info">
 
-                <div class="services__info-block">
-                    <div class="image-1"></div>
+                <article class="services__info-block">
+                    <div class="image-1">
+                        <!-- TODO: контентные изображения не следует выводить как декоративное, вставать img -->
+                    </div>
                     <div class="text">
                         <div class="text__title">
-                            <p>Создание дизайн-проекта</p>
+                            <!-- TODO: заголовки -->
+                            <h3>Создание дизайн-проекта</h3>
                         </div>
                         <div class="text__subtitle">
                             <p>Разрабатываем с учетом вашего стиля жизни, продумываем все до мелочей для вашей комфортной жизни</p>
                         </div>
                         <div class="text__button-big">
+                            <!-- FIXME -->
                             <img src="./img/book-icon.png" alt="book-icon">
                             <a href="#">Скачать каталог дизайн-проектов</a>
                         </div>
                         <div class="text__comment">
+                            <!-- FIXME -->
                             <img src="./img/pdf-icon.png" alt="pdf-icon">
                             <p>Или у вас <span>уже есть свой дизайн-проект?</span></p>
                         </div>
                     </div>
-                </div>
+                </article>
 
                 <div class="services__info-block">
                     <div class="image-2"></div>
                     <div class="text">
                         <div class="text__title">
+                            <!-- FIXME -->
                             <p>Ремонт квартиры</p>
                         </div>
                         <div class="text__subtitle">
@@ -212,17 +230,18 @@
             </div>
             <div class="details__card">
 
-                <div class="details__card-block">
+                <article class="details__card-block">
                     <div class="image-1"></div>
                     <div class="text">
-                        <p class="title">Помощь с подбором и доставкой материалов</p>
+                        <h3 class="title">Помощь с подбором и доставкой материалов</h3>
                         <p class="subtitle">Мы привозим вам каталоги, даем рекомендации по материалам, исходя из ваших пожеланий.</p>
                     </div>
-                </div>
+                </article>
                 
                 <div class="details__card-block">
                     <div class="image-2"></div>
                     <div class="text">
+                        <!-- FIXME -->
                         <p class="title">Всегда поддерживаем чистоту на обьекте</p>
                         <p class="subtitle">Наши бригади убираются ежедневно в конце рабочего дня и делают капитальную уборку в конце 
                             всех работ.
@@ -252,6 +271,7 @@
                     <img src="./img/chandelier.png" alt="image-lamp">
                 </div>
                 <div class="calculate__image">
+                    <!-- TODO: можно убрать это изображение, здесь будет вставлен фрейм после верстки. Высота блока не должна быть фиксированной -->
                     <img src="./img/details-card.png" alt="block">
                 </div>
             </div>
@@ -267,12 +287,13 @@
             <div class="saving__info">
                 <div class="saving__block">
                     <div class="saving__icon">
+                        <!-- FIXME: Декоративное изображение -->
                         <img src="./img/whiteElipse-icon.png" alt="elipse">
                     </div>
                     <div class="saving__text">
-                        <p class="saving__title">Защита от недобросовестных поставщиков/производителей и экономия времени при выборе
+                        <h3 class="saving__title">Защита от недобросовестных поставщиков/производителей и экономия времени при выборе
                             чистовых материалов
-                        </p>
+                        </h3>
                         <p class="saving__subtitle">Покупаем материалы напрямую у производителей. Даем вам наши скидки в магазинах-
                             партнерах</p>
                     </div>
@@ -322,6 +343,7 @@
     <section class="modal">
         <div class="container">
             <div class="modal__title">
+                <!-- FIXME -->
                 <img src="./img/message-icon.png" alt="typing">
                 <p>Расскажите нам о своем проекте</p>
             </div>
@@ -339,6 +361,7 @@
                     </div>
                     <div class="modal__input-name">
                         <img src="./img/human-icon.png" alt="icon">
+                        <!-- TODO: начало формы потеряли, и без доп. атрибутов для инпутов будет сложнее интегрировать cms -->
                         <input type="text" placeholder="Введите ваше имя">
                     </div>
                     <div class="modal__input-phone">
@@ -350,15 +373,19 @@
                             <img src="./img/add-icon.png" alt="">
                         </div>
                         <div class="modal__link-text">
-                            <p><span>Уже есть дизайн проект?</span> Пришлите его для точного расчета стоимости</p>
+                            <p>
+                                <!-- TODO: ссылка вместо спана  -->
+                                <span>Уже есть дизайн проект?</span> Пришлите его для точного расчета стоимости</p>
                         </div>
                     </div>
                     <div class="modal__button">
                         <img src="./img/calculator-icon.png" alt="icon">
+                        <!-- TODO: форму ссылкой не отправишь -->
                         <a href="#">Рассчитать стоимость и сроки</a>
                     </div>
                     <div class="modal__agree">
                         <input type="checkbox">
+                        <!-- label -->
                         <p>Я даю согласие на обработку своих персональных данных согласно политике конфиденциальности</p>
                     </div>
                 </div>
@@ -377,6 +404,7 @@
                 </div>
                 <div class="team__text">
                     <div class="team__block">
+                        <!-- NOTE: список определений возможно подошел бы здесь лучше -->
                         <div class="team__title">
                             <p>Все специалисты в штате</p>
                         </div>
@@ -407,6 +435,7 @@
                 </div>
             </div>
             <div class="team__button">
+                <!-- FIXME -->
                 <img src="./img/brigade-icon.png" alt="icon">
                 <a href="#">Подробней о нашей команде</a>
             </div>
@@ -423,6 +452,7 @@
             </div>
             <div class="work__info">
                 <div class="work__image work__image-1">
+                    <!-- FIXME: изображение через img с заглушкой -->
                     <div class="decoration__block">
                         <p>S = 150 м2</p>
                         <p>$ = 9000 ₽/м2</p>
@@ -462,12 +492,14 @@
                     <p>Мы готовы организовать вам просмотр наших обьектов и общение с хозяевами.</p>
                 </div>
                 <div class="work__modal-info">
+                    <!-- FIXME: <form> -->
                     <div class="work__modal-input">
                         <img src="./img/phone-icon.png" alt="icon">
                         <input type="text" placeholder="Ваш номер телефона">
                     </div>
                     <div class="work__modal-button">
                         <img src="./img/headerHouse-icon.png" alt="icon">
+                        <!-- FIXME: button -->
                         <a href="#">Записаться на просмотр обьектов</a>
                     </div>
                     <div class="work__modal-image">
@@ -481,13 +513,16 @@
     <section class="houzz">
         <div class="container">
             <div class="houzz__logo">
+                <!-- FIXME: декор -->
                 <img src="./img/comment-logo.png" alt="logo">
             </div>
             <div class="houzz__text">
+                <!-- OK -->
                 <img src="./img/houzz-logo.png" alt="logo">
                 <p>Отзывы и рейтинг на авторитетном независимом портале говорят о нас лучше, чем любые слова: </p>
             </div>
             <div class="houzz-review">
+                <!-- NOTE: здесь будет виджет -->
                 <img src="./img/top-remont.png" alt="img">
             </div>
         </div>
@@ -502,10 +537,10 @@
                 <p>Вы получаете отчеты о проделанной работе 1 раз в 2 недели!</p>
             </div>
             <div class="system__info">
-                <div class="system__block">
+                <article class="system__block">
                     <div class="system__image"></div>
                     <div class="system__text">
-                        <p class="system__title">Наша система контроля позволяем выполнять работу качественно</p>
+                        <h3 class="system__title">Наша система контроля позволяем выполнять работу качественно</h3>
                         <p class="system__subtitle">Работу на обькте контролируют:</p>
                         <ul>
                             <li>Прораб;</li>
@@ -514,7 +549,7 @@
                             <li>Менеджер контроля качества.</li>
                         </ul>
                     </div>
-                </div>
+                </article>
 
                 <div class="system__block">
                     <div class="system__image"></div>
@@ -557,12 +592,13 @@
                 </div>
             </div>
             <div class="system__button">
+                <!-- FIXME: decor -->
                 <img src="./img/calculator-icon.png" alt="icon">
                 <a href="#">Рассчитать стоимость моего ремонта</a>
             </div>
         </div>
     </section>
-
+<!-- END REVIEW -->
     <section class="rate">
         <div class="container">
             <div class="rate__main-title">
@@ -585,7 +621,7 @@
                         <a href="#">Рассчитать стоимость ремонта</a>
                     </div>
                     <div class="info__link">
-                        <img src="./img/view-icon.png" alt=""icon>
+                        <img src="./img/view-icon.png" alt="icon">
                         <p>Смотреть примеры наших работ</p>
                     </div>
                     <div class="info__border"></div>
@@ -607,7 +643,7 @@
                         <a href="#">Рассчитать стоимость ремонта</a>
                     </div>
                     <div class="info__link">
-                        <img src="./img/view-icon.png" alt=""icon>
+                        <img src="./img/view-icon.png" alt="icon">
                         <p>Смотреть примеры наших работ</p>
                     </div>
                     <div class="info__border"></div>
@@ -633,7 +669,7 @@
                         <a href="#">Рассчитать стоимость ремонта</a>
                     </div>
                     <div class="info__link">
-                        <img src="./img/view-icon.png" alt=""icon>
+                        <img src="./img/view-icon.png" alt="icon">
                         <p>Смотреть примеры наших работ</p>
                     </div>
                     <div class="info__border"></div>
