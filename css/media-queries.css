@@ -81,6 +81,7 @@
   }
   .work__modal {
     margin: 60px auto 0 auto;
+    position: relative;
   }
   .work__modal-image {
     margin: -120px 0 0 0;
@@ -90,6 +91,9 @@
   }
 }
 @media (max-width: 1024px) {
+  .decor-image {
+    display: none;
+  }
   .header__menu {
     justify-content: space-between;
   }
@@ -106,8 +110,12 @@
     display: none;
   }
   .header__title {
+    padding: 0 30px 0 0;
     font-size: 13px;
-    max-width: 600px;
+    width: auto;
+  }
+  .header__title h1 {
+    font-size: 32px;
   }
   .header__info-block .p__2 {
     max-width: 150px;
@@ -145,15 +153,14 @@
   .details__title {
     text-align: center;
   }
-  .calculate__image-lamp {
-    margin: -160px 0 0 0;
-    left: 70vw;
-  }
   .saving {
-    padding: 0 20px 60px 20px;
+    padding: 170px 20px 60px 20px;
   }
   .saving .container {
     padding: 60px 0 0 0;
+  }
+  .modal {
+    position: relative;
   }
   .modal .container {
     margin: 0 auto 0 auto;
@@ -334,7 +341,14 @@
   .saving__subtitle {
     max-width: 100%;
     text-align: center;
-    margin: 15px 0 0 0;
+    margin: 15px 0 30px 0;
+  }
+  .saving__image {
+    margin: 15px 0 15px 0;
+    width: 80%;
+  }
+  .saving__slider__wrapper {
+    width: 100%;
   }
   .modal__image {
     display: none;
@@ -384,6 +398,9 @@
   }
   .work__modal-button {
     margin: 15px 0 0 0;
+  }
+  .work__main-subtitle {
+    margin: 20px 0 50px 0;
   }
   .system__block {
     flex-direction: column;
@@ -455,7 +472,7 @@
 }
 @media (max-width: 500px) {
   .header {
-    padding: 30px;
+    padding: 10px;
   }
   .header__menu {
     padding: 0;
@@ -463,17 +480,26 @@
   .header__title {
     margin: 30px 0 0 0;
     text-align: center;
+    padding: 0;
+  }
+  .header__title h1 {
+    font-size: 25px;
   }
   .header__info {
     margin: 30px auto 0 auto;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
   }
   .header__price {
     width: 100%;
     display: flex;
     justify-content: center;
     margin: 30px auto 0 auto;
+  }
+  .services .container {
+    width: 100%;
+    margin: 0;
+    padding: 80px 0 80px 0;
   }
   .services__button {
     width: 250px;
@@ -483,6 +509,15 @@
   }
   .modal__title img {
     display: none;
+  }
+  .modal__info {
+    padding: 10px;
+  }
+  .modal__link-img {
+    background: none;
+  }
+  .modal__link-img img {
+    width: 16px;
   }
   .modal__input-name {
     width: 180px;
@@ -509,12 +544,15 @@
     margin: -25px 5px 0 5px;
   }
   .work__modal {
-    height: 360px;
+    height: 450px;
   }
   .work__modal-button {
     width: 280px;
   }
   .saving__image {
+    width: 100%;
+  }
+  .saving__slider-wrapper {
     width: 100%;
   }
   .system__button {
@@ -542,5 +580,14 @@
   }
   .sales__main-button {
     width: 300px;
+  }
+  .modal-2 .modal__info {
+    padding: 10px;
+  }
+  .modal-2 .modal__button {
+    width: 250px;
+  }
+  .modal-2 .modal__agree {
+    width: 250px;
   }
 }

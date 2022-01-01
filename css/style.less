@@ -1,4 +1,14 @@
+@font-face {
+    font-family: 'Monserrant';
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: 'STIXTwoText';
+    src: url(../fonts/STIXTwoText-Regular.ttf);
+}
+
 @primary-color: rgb(108, 192, 192);
+@second-color: #009999;
 
 * {
     margin: 0;
@@ -6,11 +16,29 @@
     a {
         text-decoration: none;
         color: white;
+        font-family: 'Monserrant';
     }
-}
+
+    p {
+        font-family: 'Monserrant';
+    }
+
+    li {
+        font-family: 'Monserrant';
+    }
+    h1 {
+        font-family: 'STIXTwoText';
+    }
+    h2 {
+        font-family: 'STIXTwoText';
+    }
+    h3 {
+        font-family: 'STIXTwoText';
+    }
+} 
 
 body {
-    background: url(../img/body-back.png);
+    background-color: #f9f9f9;
 }
 
 .header {
@@ -24,6 +52,9 @@ body {
     max-width: 1800px;
     margin: auto auto;
     padding: 40px 10px 0 10px;
+}
+.header__logo {
+    margin: 0 20px 0 0;
 }
 .header__menu-burger {
     display: none;
@@ -41,7 +72,7 @@ body {
 
         li {
             a {
-                margin: 0 40px 0 0;
+                margin: 0 15px 0 0;
             }
         }
     }
@@ -53,19 +84,21 @@ body {
 }
 .header__button {
     border-radius: 17px;
-    background-image: -moz-linear-gradient( 1deg, rgb(108,192,192) 0%, rgb(84,182,182) 100%);
-    background-image: -webkit-linear-gradient( 1deg, rgb(108,192,192) 0%, rgb(84,182,182) 100%);
-    background-image: -ms-linear-gradient( 1deg, rgb(108,192,192) 0%, rgb(84,182,182) 100%);
-    box-shadow: inset 0px 1px 18px 0px rgba(255, 255, 255, 0.39);
+    background-color: @second-color;
+    box-shadow: 0px 4px 27px 0px rgba(108, 192, 192, 0.44),inset 0px 1px 54px 0px rgba(255, 255, 255, 0.53), 0px 4px 0px 0px rgba(48, 119, 119, 0.7);
     width: 197px;
     height: 34px;
     display: flex;
     justify-content: center;
     align-items: center;
+    
     a {
         font-weight: bold;
+        text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.5);
     }
 }
+
+
 .header__phone {
     color: white;
 }
@@ -85,9 +118,12 @@ body {
 
 .header__title {
     max-width: 990px;
-    font-size: 27px;
     margin: 220px 0 0 370px;
     color: white;
+
+    h1 {
+        font-size: 44px;
+    }
 }
 
 .header__info {
@@ -97,6 +133,7 @@ body {
 }
 .header__info-block {
     display: flex;
+    margin: 0 20px 0 0;
 
     .image {
         border: 1px solid rgba(255, 255, 255, 0.197);
@@ -137,8 +174,10 @@ body {
     }
 
     a {
-        background: @primary-color;
+        background-color: @second-color;
+        box-shadow: 0px 4px 27px 0px rgba(108, 192, 192, 0.44),inset 0px 1px 54px 0px rgba(255, 255, 255, 0.53), 0px 4px 0px 0px rgba(48, 119, 119, 0.7);
         padding: 12px 20px 12px 70px;
+        text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
         border-radius: 17px;
         margin: 0 0 0 -60px;
         z-index: 0;
@@ -156,29 +195,36 @@ body {
 
 .services {
     padding: 0 20px 0 20px;
+    background: url(../img/services-back.png) no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
     .container {
         max-width: 1175px;
-        margin: 125px auto 0 auto;
-        z-index: 2s;
+        margin: auto auto;
+        padding: 125px 0 100px 0;
     }
 }
-// .services__image-sofa {
-//     position: absolute;
-//     z-index: -1;
-//     float: left;
-//     margin: 350px 0 0 0;
-// }
-// .services__image-room {
-//     position: absolute;
-//     z-index: -1;
-//     margin: 800px 0 0 0;
-//     left: 72.5vw;
-// }
+.services__image-sofa {
+    position: absolute;
+    top: 15%;
+    transform: translate(-15%);
+    z-index: 0;
+    
+}
+.services__image-room {
+    position: absolute;
+    top: 40%;
+    left: 100%;
+    transform: translate(-100%, -40%);
+    z-index: 1;
+}
 .services__image-lamp {
     position: absolute;
     z-index: 2;
-    margin: 1500px 0 0 0;
-    left: 80vw;
+    top: 90%;
+    left: 100%;
+    transform: translate(-100%,-90%);
 }
 .services__title {
     font-size: 30px;
@@ -195,6 +241,7 @@ body {
 }
 .services__info {
     margin: 70px 0 0 0;
+    z-index: 2;
 }
 .services__info-block {
     display: flex;
@@ -206,11 +253,13 @@ body {
         width: 50%;
         background-color: rgb(197, 213, 213);
         height: 340px;
+        z-index: 2;
     }
     .image-2 {
         width: 50%;
         background-color: rgb(164, 179, 179);
         height: 340px;
+        z-index: 2;
     }
     .image-3 {
         width: 50%;
@@ -247,7 +296,8 @@ body {
             margin: 12px 0 0 0;
 
             a {
-                background-color: @primary-color;
+                background-color: @second-color;
+                box-shadow: 0px 4px 27px 0px rgba(108, 192, 192, 0.44),inset 0px 1px 54px 0px rgba(255, 255, 255, 0.53), 0px 4px 0px 0px rgba(48, 119, 119, 0.7);
                 margin: 0 0 0 -52px;
                 padding: 8px 20px 8px 70px;
                 border-radius: 17px;
@@ -261,8 +311,9 @@ body {
         .text__button {
             display: flex;
             align-items: center;
-            background-color: @primary-color;
-            padding: 10px 25px 10px 25px;
+            background-color: @second-color;
+            box-shadow: 0px 4px 27px 0px rgba(108, 192, 192, 0.44),inset 0px 1px 54px 0px rgba(255, 255, 255, 0.53), 0px 4px 0px 0px rgba(48, 119, 119, 0.7);
+            padding: 10px 35px 10px 25px;
             width: 110px;
             border-radius: 17px;
             margin: 20px 0 0 0;
@@ -296,6 +347,7 @@ body {
 
 
 .services__card {
+    box-shadow: 0px 0px 15px 15px rgba(177, 177, 177, 0.2);
     max-width: 1100px;
     margin: 100px auto 0 auto;
     background: url(../img/additionalServices-back.png) no-repeat center center fixed;
@@ -327,8 +379,9 @@ body {
     .button__block {
         display: flex;
         align-items: center;
-        background-color: @primary-color;
-        padding: 10px 25px 10px 25px;
+        background-color: @second-color;
+        box-shadow: 0px 4px 27px 0px rgba(108, 192, 192, 0.44),inset 0px 1px 54px 0px rgba(255, 255, 255, 0.53), 0px 4px 0px 0px rgba(48, 119, 119, 0.7);
+        padding: 10px 35px 10px 25px;
         width: 110px;
         border-radius: 17px;
         margin: 20px 0 0 0;
@@ -343,8 +396,9 @@ body {
 
 .services__button {
     width: 320px;
-    margin: 100px auto 100px auto;
-    background-color: @primary-color;
+    margin: 100px auto 0 auto;
+    background-color: @second-color;
+    box-shadow: 0px 4px 27px 0px rgba(108, 192, 192, 0.44),inset 0px 1px 54px 0px rgba(255, 255, 255, 0.53), 0px 4px 0px 0px rgba(48, 119, 119, 0.7);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -360,12 +414,13 @@ body {
 
 .details {
     background: url(../img/details-back.png) no-repeat center center fixed;
+    position: relative;
     background-size: cover;
     padding: 0 20px;
     .container {
         max-width: 1175px;
         margin: auto auto;
-        padding: 120px 0 100px 0;
+        padding: 120px 0 0 0;
     }
 }
 .details__title {
@@ -415,11 +470,13 @@ body {
 }
 
 .details__calculate {
-    margin: 80px auto 0 auto;
+    position: relative;
+    margin: 80px auto -20% auto;
     max-width: 1175px;
     padding: 70px 60px;
     background: url(../img/additionalServices-back.png) no-repeat center center fixed;
     background-size: cover;
+    z-index: 2;
 }
 .calculate__title {
     font-size: 30px;
@@ -431,7 +488,8 @@ body {
 }
 .calculate__image-lamp {
     position: absolute;
-    left: 60vw;
+    left: 80%;
+    transform: translate(-80%);
     margin: -160px 0 0 0;
 }
 .calculate__image {
@@ -444,43 +502,74 @@ body {
 
 //saving section styles
 .saving {
+    position: relative;
     background: url(../img/withUs-back.png) no-repeat center center fixed;
     background-size: cover;
-    padding: 0 20px;
+    padding: 0 20px 0 20px;
+    overflow: hidden;
     .container {
-        padding: 150px 0 550px 0;
+        padding: 380px 0 500px 0;
         max-width: 1175px;
         margin: auto auto;
     }
 }
+
+.arrow-right-lamp {
+    position: absolute;
+    top: 40%;
+    left: 100%;
+    transform: translate(-100%, -40%);
+    z-index: 0;
+}
+.arrow-left-lamp {
+    position: absolute;
+    top: 50%;
+    left: -5px;
+    transform: translate(-5px, -50%);
+    transform: scale(-1,1);
+    z-index: 0;
+}
+
 
 .saving__main-title {
     font-size: 25px;
     color: white;
     max-width: 900px;
 }
-
-.saving__info {
-
-}
 .saving__block {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 90px 0 0 0;
+    z-index: 2;
 }
 .saving__icon {
-    width: 10%;
+    background: url(../img/whiteElipse-icon.png) no-repeat center center ;
+    background-size: cover;
+    outline: 1px solid rgba(142, 141, 141, 0.156);
+    outline-offset: 12px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
 }
+
 .saving__text {
     width: 40%;
     margin: 0 30px 0 30px;
+    z-index: 2;
 }
 .saving__title {
     max-width: 370px;
     font-size: 24px;
     color: rgb(108, 192, 192);
     line-height: 1.2;
+    z-index: 2;
 }
 .saving__subtitle {
     font-size: 16px;
@@ -488,20 +577,52 @@ body {
     margin: 25px 0 0 0;
     color: white;
     line-height: 1.5;
+    z-index: 2;
 }
 .saving__image {
     width: 50%;
     height: 280px;
     background-color: white;
+    z-index: 2;
+}
+//slider styles
+.saving__slider-wrapper {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+.saving__slider__inner {
+    width: 100%;
+    height: 280px;
+    background-color: white;
+    z-index: 2;
+    outline: 1px solid rgba(128, 128, 128, 0.177);
+    outline-offset: 13px;
+}
+.saving__slider-left-icon {
+    margin: 0 20px 0 0;
+    cursor: pointer;
+}
+.saving__slider-right-icon {
+    transform: scale(-1,1);
+    margin: 0 0 0 20px;
+    cursor: pointer;
 }
 
 
 //modal block styles
+.modal-1 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
 .modal {
+    z-index: 2;
+    box-shadow: 0px 0px 15px 15px rgba(89, 89, 89, 0.2);
     .container {
         max-width: 1030px;
-        padding: 20px;
         margin: -370px auto 0 auto;
+        
     }
 }
 .modal__title {
@@ -615,12 +736,12 @@ body {
 
 .modal__button {
     width: 390px;
-    background: @primary-color;
+    background-color: @second-color;
+    box-shadow: 0px 4px 27px 0px rgba(108, 192, 192, 0.44),inset 0px 1px 54px 0px rgba(255, 255, 255, 0.53), 0px 4px 0px 0px rgba(48, 119, 119, 0.7);
     display: flex;
     align-items: center;
     border-radius: 27px;
     margin: 50px 0 0 0;
-    box-shadow: 0px 4px 0px 0px rgba(48, 119, 119, 0.7);
     cursor: pointer;
 
     img {
@@ -654,14 +775,27 @@ body {
 
 //team block styles
 .team {
-    background: #f9f9f9;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+    background: url(../img/team-back.png) no-repeat center center fixed;
+    background-size: cover;
     padding: 0 20px;
     .container {
         max-width: 1175px;
         margin: 0 auto 0 auto;
-        padding: 150px 0 135px 0;
+        padding: 500px 0 135px 0;
     }
 }
+
+.screwdriver-image {
+    position: absolute;
+    z-index: 1;
+    top: 60%;
+    left: 100%;
+    transform: translate(-100%, -60%);
+}
+
 .team__main-title {
     max-width: 700px;
     font-size: 25px;
@@ -688,24 +822,27 @@ body {
     font-weight: bold;
     color: rgb(25, 23, 26);
     line-height: 1.5;
+    z-index: 2;
 }
 .team__subtitle {
     font-size: 16px;
     color: rgb(25, 23, 26);
     line-height: 1.5;
     margin: 15px 0 0 0;
+    z-index: 2;
 }
 
 .team__button {
     width: 380px;
-    background: @primary-color;
+    background-color: @second-color;
+    box-shadow: 0px 4px 27px 0px rgba(108, 192, 192, 0.44),inset 0px 1px 54px 0px rgba(255, 255, 255, 0.53), 0px 4px 0px 0px rgba(48, 119, 119, 0.7);
     display: flex;
     align-items: center;
     border-radius: 27px;
     margin: 50px 0 0 0;
-    box-shadow: 0px 4px 0px 0px rgba(48, 119, 119, 0.7);
     cursor: pointer;
     margin: 75px auto 0 auto;
+    z-index: 2;
 
     img {
         margin: -25px 15px 0 10px;
@@ -721,7 +858,9 @@ body {
 .work {
     background: url(../img/remont-back.png) no-repeat center center fixed;
     background-size: cover;
-    padding: 120px 20px 150px 20px;
+    padding: 120px 20px 230px 20px;
+    position: relative;
+    z-index: 0;
     .container {
         max-width: 1175px;
         margin: auto auto;
@@ -735,17 +874,33 @@ body {
     font-size: 16px;
     font-weight: bold;
     color: white;
-    margin: 30px 0 0 0;
+    margin: 30px 0 80px 0;
 
     span {
         color: @primary-color;
         text-decoration: underline;
     }
 }
+
+//work slider styles
+.work__slider-wrapper {
+    display: flex;
+    align-items: center;
+}
+.work__slider-left-icon {
+    margin: 0 20px 0 -40px;
+    cursor: pointer;
+}
+.work__slider-right-icon {
+    transform: scale(-1,1);
+    margin: 0 -40px 0 20px;
+    cursor: pointer;
+}
+
 .work__info {
     display: flex;
     justify-content: space-between;
-    margin: 80px 0 0 0;
+    width: 100%;
 }
 .work__image {
     width: 38%;
@@ -819,6 +974,7 @@ body {
 }
 
 .work__modal {
+    position: absolute;
     max-width: 1020px;
     background: white;
     margin: 60px 0 0 0;
@@ -869,12 +1025,12 @@ body {
 .work__modal-button {
     width: 380px;
     height: 53px;
-    background: @primary-color;
+    background-color: @second-color;
+    box-shadow: 0px 4px 27px 0px rgba(108, 192, 192, 0.44),inset 0px 1px 54px 0px rgba(255, 255, 255, 0.53), 0px 4px 0px 0px rgba(48, 119, 119, 0.7);
     display: flex;
     align-items: center;
     border-radius: 27px;
     margin: 50px 0 0 0;
-    box-shadow: 0px 4px 0px 0px rgba(48, 119, 119, 0.7);
     cursor: pointer;
     margin: 30px 0 0 20px;
 
@@ -899,15 +1055,17 @@ body {
 
 //houzz block styles
 .houzz {
-    background-color: #f9f9f9;
     padding: 60px 20px 100px 20px;
+    background: url(../img/houzz.png) no-repeat center left;
+    background-color: #f9f9f9;
+    max-width: 1300px;
+    margin: 50px auto 80px auto;
     .container {
         max-width: 1175px;
-        margin: 70px auto 0 auto;
+        margin: 0 auto 0 auto;
         display: flex;
         align-items: center;
-        background: url(../img/houzz.png) no-repeat left bottom;
-        padding: 0 0 100px 0;
+        padding: 90px 0 0 0;
     }
 }
 .houzz__text {
@@ -925,12 +1083,27 @@ body {
 //system block styles
 
 .system {
+    position: relative;
     background-color: #f9f9f9;
     padding: 0 20px 150px 20px;
     .container {
         max-width: 1175px;
         margin: auto auto;
+        z-index: 2;
     }
+}
+.a4-image {
+    position: absolute;
+    top: 20%;
+    transform: translate(0, 20%);
+    z-index: 0;
+}
+.smartphone2-image {
+    position: absolute;
+    top: 70%;
+    left: 100%;
+    transform: translate(-100%, -70%);
+    z-index: 0;
 }
 .system__main-title {
     font-size: 25px;
@@ -952,15 +1125,18 @@ body {
     display: flex;
     align-items: center;
     margin: 50px 0 0 0;
+    z-index: 1;
 }
 .system__image {
     width: 60%;
     background-color: rgb(197, 213, 213);;
     height: 380px;
+    z-index: 1;
 }
 .system__text {
     width: 40%;
     margin: 0 0 0 90px;
+    z-index: 1;
 
     ul {
         margin: 15px 0 0 0;
@@ -982,13 +1158,13 @@ body {
 }
 
 .system__button {
-    width: 420px;
+    width: 450px;
     height: 55px;
-    background: @primary-color;
+    background-color: @second-color;
+    box-shadow: 0px 4px 27px 0px rgba(108, 192, 192, 0.44),inset 0px 1px 54px 0px rgba(255, 255, 255, 0.53), 0px 4px 0px 0px rgba(48, 119, 119, 0.7);
     display: flex;
     align-items: center;
     border-radius: 27px;
-    box-shadow: 0px 4px 0px 0px rgba(48, 119, 119, 0.7);
     cursor: pointer;
     margin: 116px auto 0 auto;
 
@@ -1040,7 +1216,7 @@ body {
 }
 .info__title {
     font-size: 24px;
-    font-family: "Montserrat";
+    font-family: "Monserrant";
     color: rgb(249, 249, 249);
     font-weight: bold;
     line-height: 1.2;
@@ -1057,7 +1233,7 @@ body {
 }
 .info__text {
     font-size: 16px;
-    font-family: "Montserrat";
+    font-family: "Monserrant";
     color: rgb(249, 249, 249);
     line-height: 1.5;
     margin: 15px auto 0 auto;
@@ -1071,7 +1247,7 @@ body {
 }
 .info__price {
     font-size: 20px;
-    font-family: "Montserrat";
+    font-family: "Monserrant";
     color: rgb(249, 249, 249);
     font-weight: bold;
     line-height: 1.2;
@@ -1085,18 +1261,18 @@ body {
 }
 
 .info__button {
-    background-color: #009999;
+    background-color: @second-color;
+    box-shadow: 0px 4px 27px 0px rgba(108, 192, 192, 0.44),inset 0px 1px 54px 0px rgba(255, 255, 255, 0.53), 0px 4px 0px 0px rgba(48, 119, 119, 0.7);
     height: 46px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 27px;
     margin: 45px 0 0 0;
-    box-shadow: 0px 4px 0px 0px rgba(48, 119, 119, 0.7);
 
     a {
         font-size: 14px;
-        font-family: "Montserrat";
+        font-family: "Monserrant";
         color: rgb(255, 255, 255);
         font-weight: bold;
         line-height: 1.5;
@@ -1144,12 +1320,12 @@ body {
 .rate__main-button {
     width: 420px;
     height: 55px;
-    background: @primary-color;
+    background-color: @second-color;
+    box-shadow: 0px 4px 27px 0px rgba(108, 192, 192, 0.44),inset 0px 1px 54px 0px rgba(255, 255, 255, 0.53), 0px 4px 0px 0px rgba(48, 119, 119, 0.7);
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 27px;
-    box-shadow: 0px 4px 0px 0px rgba(48, 119, 119, 0.7);
     cursor: pointer;
     margin: 140px auto 0 auto;
 
@@ -1185,7 +1361,7 @@ body {
 .sales__info {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    
 }
 .sales__block {
     max-width: 360px;
@@ -1195,14 +1371,17 @@ body {
 .sales__image-1 {
     height: 290px;
     background-color: rgb(197, 213, 213);
+    position: relative;
 }
 .sales__image-2 {
     height: 290px;
     background-color: rgb(164, 179, 179);
+    position: relative;
 }
 .sales__image-3 {
     height: 290px;
     background-color: rgb(213, 221, 221);
+    position: relative;
 }
 .sales__decoration {
     padding: 20px 10px;
@@ -1214,8 +1393,12 @@ body {
     border-top-left-radius: 40px;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
-    margin: 0 0 0 -15px;
+    position: absolute;
+    top: -20px;
+    left: -15px;
+    box-shadow: 0px 2px 10px 5px rgba(24, 23, 25, 0.08);
 }
+
 .sales__text {
     padding: 20px 0 60px 30px;
     background-color: white;
@@ -1241,11 +1424,11 @@ body {
 .sales__button {
     display: flex;
     align-items: center;
-    background-color: @primary-color;
+    background-color: @second-color;
+    box-shadow: 0px 4px 27px 0px rgba(108, 192, 192, 0.44),inset 0px 1px 54px 0px rgba(255, 255, 255, 0.53), 0px 4px 0px 0px rgba(48, 119, 119, 0.7);
     padding: 10px 25px 10px 25px;
     width: 110px;
     border-radius: 17px;
-    box-shadow: 0px 4px 0px 0px rgba(48, 119, 119, 0.7);
     margin: 40px 0 0 0;
     a {
         
@@ -1258,12 +1441,12 @@ body {
 .sales__main-button {
     width: 420px;
     height: 55px;
-    background: @primary-color;
+    background-color: @second-color;
+    box-shadow: 0px 4px 27px 0px rgba(108, 192, 192, 0.44),inset 0px 1px 54px 0px rgba(255, 255, 255, 0.53), 0px 4px 0px 0px rgba(48, 119, 119, 0.7);
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 27px;
-    box-shadow: 0px 4px 0px 0px rgba(48, 119, 119, 0.7);
     cursor: pointer;
     margin: 90px auto 0 auto;
 
@@ -1280,6 +1463,23 @@ body {
     margin: 140px auto 0 auto;
     max-width: 1020px;
 }
+.modal__agree {
+    display: flex;
+    align-items: center;
+    width: 390px;
+    margin: 20px 0 0 0;
+
+    input {
+        width: 40px;
+        height: 40px;
+    }
+    label {
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.502);
+        margin: 0 0 0 10px;
+    }
+}
+
 
 
 
@@ -1288,6 +1488,7 @@ body {
     background: url(../img/footer-back.png) no-repeat center center fixed;
     background-size: cover;
     padding: 80px 20px;
+    position: relative;
     .container {
         max-width: 1175px;
         margin: auto auto;
@@ -1295,6 +1496,12 @@ body {
         justify-content: space-between;
         align-items: flex-end;
     }
+}
+.footer__lamp {
+    position: absolute;
+    width: 150px;
+    transform: scale(-1,1);
+    top: -120px;
 }
 .footer__block-1 {
     img {
@@ -1372,14 +1579,14 @@ body {
     .call {
     display: flex;
     align-items: center;
-    background-color: @primary-color;
+    background-color: @second-color;
+    box-shadow: 0px 4px 27px 0px rgba(108, 192, 192, 0.44),inset 0px 1px 54px 0px rgba(255, 255, 255, 0.53), 0px 4px 0px 0px rgba(48, 119, 119, 0.7);
     padding: 10px 25px 10px 25px;
     width: 140px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 17px;
-    box-shadow: 0px 4px 0px 0px rgba(48, 119, 119, 0.7);
     margin: 30px 0 0 0;
         a {
             font-weight: bold;
