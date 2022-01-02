@@ -13,22 +13,22 @@
 * a {
   text-decoration: none;
   color: white;
-  font-family: 'Monserrant';
+  font-family: 'Monserrant', Arial, Helvetica, sans-serif;
 }
 * p {
-  font-family: 'Monserrant';
+  font-family: 'Monserrant', Arial, Helvetica, sans-serif;
 }
 * li {
-  font-family: 'Monserrant';
+  font-family: 'Monserrant', Arial, Helvetica, sans-serif;
 }
 * h1 {
-  font-family: 'STIXTwoText';
+  font-family: 'STIXTwoText', Arial, Helvetica, sans-serif;
 }
 * h2 {
-  font-family: 'STIXTwoText';
+  font-family: 'STIXTwoText', Arial, Helvetica, sans-serif;
 }
 * h3 {
-  font-family: 'STIXTwoText';
+  font-family: 'STIXTwoText', Arial, Helvetica, sans-serif;
 }
 body {
   background-color: #f9f9f9;
@@ -36,6 +36,7 @@ body {
 .header {
   background: url(../img/header-back.png) no-repeat center center fixed;
   background-size: cover;
+  background-color: #808080;
 }
 .header__menu {
   display: flex;
@@ -356,6 +357,7 @@ body {
   margin: 100px auto 0 auto;
   background: url(../img/additionalServices-back.png) no-repeat center center fixed;
   background-size: cover;
+  background-color: #808080;
   padding: 50px 60px 50px 60px;
 }
 .card__title {
@@ -415,6 +417,7 @@ body {
   margin: -30px 10px 0 0;
 }
 .details {
+  background-color: #808080;
   background: url(../img/details-back.png) no-repeat center center fixed;
   position: relative;
   background-size: cover;
@@ -474,6 +477,7 @@ body {
   margin: 80px auto -20% auto;
   max-width: 1175px;
   padding: 70px 60px;
+  background-color: #808080;
   background: url(../img/additionalServices-back.png) no-repeat center center fixed;
   background-size: cover;
   z-index: 2;
@@ -490,7 +494,7 @@ body {
   position: absolute;
   left: 80%;
   transform: translate(-80%);
-  margin: -160px 0 0 0;
+  margin: -165px 0 0 0;
 }
 .calculate__image {
   margin: 60px auto 0 auto;
@@ -501,6 +505,7 @@ body {
 .saving {
   position: relative;
   background: url(../img/withUs-back.png) no-repeat center center fixed;
+  background-color: #808080;
   background-size: cover;
   padding: 0 20px 0 20px;
   overflow: hidden;
@@ -820,6 +825,7 @@ body {
   font-weight: bold;
 }
 .work {
+  background-color: #808080;
   background: url(../img/remont-back.png) no-repeat center center fixed;
   background-size: cover;
   padding: 120px 20px 230px 20px;
@@ -1121,6 +1127,7 @@ body {
   margin: 0 30px 0 0 ;
 }
 .rate {
+  background-color: #808080;
   background: url(../img/tarif-back.png) no-repeat center center fixed;
   background-size: cover;
   padding: 130px 20px 150px 20px;
@@ -1149,18 +1156,18 @@ body {
   justify-content: space-between;
   margin: 120px 0 0 0;
 }
-.info__block {
+.rate__block {
   width: 30%;
   text-align: center;
 }
-.info__title {
+.rate__title {
   font-size: 24px;
   font-family: "Monserrant";
   color: #f9f9f9;
   font-weight: bold;
   line-height: 1.2;
 }
-.info__image {
+.rate__image {
   border: 1px solid rgba(105, 105, 105, 0.212);
   border-radius: 50%;
   width: 370px;
@@ -1170,7 +1177,7 @@ body {
   align-items: center;
   margin: 20px 0 0 0;
 }
-.info__text {
+.rate__text {
   font-size: 16px;
   font-family: "Monserrant";
   color: #f9f9f9;
@@ -1178,13 +1185,13 @@ body {
   margin: 15px auto 0 auto;
   max-width: 220px;
 }
-.info__border {
+.rate__border {
   margin: 40px auto 0 auto;
   width: 50px;
   background-color: #33cc9963;
   height: 2px;
 }
-.info__price {
+.rate__price {
   font-size: 20px;
   font-family: "Monserrant";
   color: #f9f9f9;
@@ -1192,13 +1199,13 @@ body {
   line-height: 1.2;
   margin: 31px 0 0 0;
 }
-.info__price-2 {
+.rate__price-2 {
   margin: 68px 0 0 0;
 }
-.info__price-3 {
+.rate__price-3 {
   margin: 90px 0 0 0;
 }
-.info__button {
+.rate__button {
   background-color: #009999;
   transition: 750ms;
   height: 46px;
@@ -1208,40 +1215,40 @@ body {
   border-radius: 27px;
   margin: 45px 0 0 0;
 }
-.info__button:hover {
+.rate__button:hover {
   box-shadow: 0px 4px 27px 0px rgba(108, 192, 192, 0.44), inset 0px 1px 54px 0px rgba(255, 255, 255, 0.53), 0px 4px 0px 0px rgba(48, 119, 119, 0.7);
 }
-.info__button a {
+.rate__button a {
   font-size: 14px;
   font-family: "Monserrant";
   color: #ffffff;
   font-weight: bold;
   line-height: 1.5;
 }
-.info__link {
+.rate__link {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 15px auto 0 auto;
 }
-.info__link img {
+.rate__link img {
   margin: 0 10px 0 0 ;
 }
-.info__link p {
+.rate__link p {
   font-size: 14px;
   font-family: "Montserrat";
   color: #b0b0b0;
   font-weight: bold;
   text-decoration: underline;
 }
-.info__gift {
+.rate__gift {
   margin: 23px auto 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 280px;
 }
-.info__gift p {
+.rate__gift p {
   font-size: 16px;
   font-family: "Montserrat";
   color: #f9f9f9;
@@ -1270,6 +1277,7 @@ body {
   margin: 0 30px 0 0 ;
 }
 .sales {
+  background-color: #808080;
   background: url(../img/sales-back.png) no-repeat center center fixed;
   background-size: cover;
   padding: 140px 20px 140px 20px;
@@ -1360,7 +1368,7 @@ body {
   box-shadow: 0px 4px 27px 0px rgba(108, 192, 192, 0.44), inset 0px 1px 54px 0px rgba(255, 255, 255, 0.53), 0px 4px 0px 0px rgba(48, 119, 119, 0.7);
 }
 .sales__button img {
-  margin: 3px 0 0 20px;
+  margin: 3px 10px 0 10px;
 }
 .sales__main-button {
   width: 420px;
@@ -1404,6 +1412,7 @@ body {
   margin: 0 0 0 10px;
 }
 .footer {
+  background-color: #808080;
   background: url(../img/footer-back.png) no-repeat center center fixed;
   background-size: cover;
   padding: 80px 20px;
