@@ -13,7 +13,7 @@
         <div class="container">
             <nav class="header__menu">
                 <div class="header__logo">
-                    <img src="./img/logo.png" alt="header logo">
+                    <img src="./img/logo.png" alt="header logo" width="100">
                 </div>
                 <div class="header__link">
                     <ul>
@@ -27,8 +27,8 @@
                     </ul>
                 </div>
                 <div class="header__social">
-                    <img src="./img/viber-icon.png" alt="viber-icon" class="viber-icon">
-                    <img src="./img/telegram-icon.png" alt="telegram-icon" class="telegram-icon">
+                    <img src="./img/viber-icon.png" alt="viber-icon" class="viber-icon" width="25">
+                    <img src="./img/telegram-icon.png" alt="telegram-icon" class="telegram-icon" width="25">
                 </div>
                 <div class="header__button">
                     <a href="#">Перезвонить мне</a>
@@ -43,7 +43,7 @@
                     </div>
                 </div>
                 <div class="header__menu-burger">
-                    <img src="./img/menu-burger-icon.png" alt="menu-burger">
+                    <span></span>
                 </div>
             </nav>
 
@@ -84,7 +84,7 @@
             </div>
 
             <div class="header__price">
-                <img src="./img/headerHouse-icon.png" alt="home-icon">
+                <img src="./img/headerHouse-icon.png" alt="home-icon" width="100">
                 <a href="#">Рассчитать стоимость и выбрать подарок</a>
                 <p>Рассчитаем точную стоимость и сроки ремонта для вас + подарок!</p>
             </div>
@@ -92,9 +92,9 @@
     </header>
 
     <section class="services">
-        <!-- <img src="./img/sofa.png" alt="sofa" class="services__image-sofa">
-        <img src="./img/room.png" alt="room" class="services__image-room">
-        <img src="./img/lamp.png" alt="lamp" class="services__image-lamp"> -->
+        <img src="./img/sofa.png" alt="sofa" class="services__image-sofa decor-image" width="300">
+        <img src="./img/room.png" alt="room" class="services__image-room decor-image" width="300">
+        <img src="./img/lamp.png" alt="lamp" class="services__image-lamp decor-image" width="220">
         <div class="container">
             <div class="services__title">
                 <h2>Наши услуги</h2>
@@ -114,11 +114,11 @@
                             <p>Разрабатываем с учетом вашего стиля жизни, продумываем все до мелочей для вашей комфортной жизни</p>
                         </div>
                         <div class="text__button-big">
-                            <img src="./img/book-icon.png" alt="book-icon">
+                            <img src="./img/book-icon.png" alt="book-icon" width="100">
                             <a href="#">Скачать каталог дизайн-проектов</a>
                         </div>
                         <div class="text__comment">
-                            <img src="./img/pdf-icon.png" alt="pdf-icon">
+                            <img src="./img/pdf-icon.png" alt="pdf-icon" width="15">
                             <p>Или у вас <span>уже есть свой дизайн-проект?</span></p>
                         </div>
                     </div>
@@ -136,7 +136,7 @@
                         </div>
                         <div class="text__button">
                             <a href="#">Подробнее</a>
-                            <img src="./img/rightArrow-icon.png" alt="rightArrow-icon">
+                            <img src="./img/rightArrow-icon.png" alt="rightArrow-icon" width="80">
                         </div>
                     </div>
                 </article>
@@ -154,7 +154,7 @@
                         </div>
                         <div class="text__button">
                             <a href="#">Подробнее</a>
-                            <img src="./img/rightArrow-icon.png" alt="rightArrow-icon">
+                            <img src="./img/rightArrow-icon.png" alt="rightArrow-icon" width="80">
                         </div>
                     </div>
                 </article>
@@ -202,7 +202,7 @@
 
             </div>
             <div class="services__button">
-                <img src="./img/tools-icon.png" alt="tools-icon">
+                <img src="./img/tools-icon.png" alt="tools-icon" width="70">
                 <a href="#">Посмотреть все услуги</a>
             </div>
         </div>
@@ -252,7 +252,7 @@
                     <p>Узнайте за 5 шагов стоимость вашего ремонта</p>
                 </div>
                 <div class="calculate__image-lamp">
-                    <img src="./img/chandelier.png" alt="image-lamp">
+                    <img src="./img/chandelier.png" alt="image-lamp" width="150">
                 </div>
                 <div class="calculate__image">
                     <!-- Здесь будет вставлен фрейм после верстки -->
@@ -262,6 +262,8 @@
     </section>
 
     <section class="saving">
+        <img src="./img/arrowLamp.png" alt="lamp" class="arrow-right-lamp decor-image" width="350">
+        <img src="./img/arrowLamp.png" alt="lamp" class="arrow-left-lamp decor-image" width="350">
         <div class="container">
             <div class="saving__main-title">
                 <h2>С нами вы экономите от 500 тыс.руб. на материалах, и НЕ платите за ошибки в процессе ремонта</h2>
@@ -270,7 +272,7 @@
             <div class="saving__info">
                 <div class="saving__block">
                     <div class="saving__icon">
-                        <img src="./img/whiteElipse-icon.png" alt="elipse">
+                        <p>1</p>
                     </div>
                     <div class="saving__text">
                         <h3 class="saving__title">Защита от недобросовестных поставщиков/производителей и экономия времени при выборе
@@ -279,7 +281,11 @@
                         <p class="saving__subtitle">Покупаем материалы напрямую у производителей. Даем вам наши скидки в магазинах-
                             партнерах</p>
                     </div>
-                    <div class="saving__image"></div>
+                    <div class="saving__slider-wrapper">
+                        <img src="./img/leftArrow-icon.png" alt="icon" class="saving__slider-left-icon">
+                        <div class="saving__slider__inner"></div>
+                        <img src="./img/leftArrow-icon.png" alt="icon" class="saving__slider-right-icon">
+                    </div>
                 </div>
 
                 <div class="saving__block">
@@ -291,13 +297,13 @@
                         <p class="saving__subtitle">При ремонте четко следуем вашему дизайн-проекту или составляем его, если у вас его нет</p>
                     </div>
                     <div class="saving__icon">
-                        <img src="./img/whiteElipse-icon.png" alt="elipse">
+                        <p>2</p>
                     </div>
                 </div>
 
                 <div class="saving__block">
                     <div class="saving__icon">
-                        <img src="./img/whiteElipse-icon.png" alt="elipse">
+                        <p>3</p>
                     </div>
                     <div class="saving__text">
                         <h3 class="saving__title">Составляем детальную смету</h3>
@@ -315,14 +321,14 @@
                         </p>
                     </div>
                     <div class="saving__icon">
-                        <img src="./img/whiteElipse-icon.png" alt="elipse">
+                        <p>4</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="modal">
+    <section class="modal modal-1">
         <div class="container">
             <div class="modal__title">
                 <img src="./img/message-icon.png" alt="typing">
@@ -330,7 +336,7 @@
             </div>
             <div class="modal__info">
                 <div class="modal__image">
-                    <img src="./img/man.png" alt="man">
+                    <img src="./img/man.png" alt="man" width="485">
                 </div>
                 <div class="modal__text">
                     <div class="modal__list">
@@ -341,7 +347,7 @@
                         </ul>
                     </div>
                     
-                    <form action="">
+                    <form action="get">
                         <div class="modal__input-name">
                             <img src="./img/human-icon.png" alt="icon">
                             <input type="text" placeholder="Ваше имя">
@@ -361,8 +367,8 @@
                         </div>
                     </div>
                     <div class="modal__button">
-                        <img src="./img/calculator-icon.png" alt="icon">
-                        <button type="submit" href="#">Рассчитать стоимость и сроки</button>
+                        <img src="./img/calculator-icon.png" alt="icon" width="50">
+                        <button type="submit">Рассчитать стоимость и сроки</button>
                     </div>
                     <div class="modal__agree">
                         <input type="checkbox" id="checkbox-input">
@@ -374,13 +380,14 @@
     </section>
 
     <section class="team">
+        <img src="./img/screwdriver.png" alt="image" class="screwdriver-image decor-image" width="150">
         <div class="container">
             <div class="team__main-title">
                 <h2>В нашей команде профессионалы с опытом работы не менее 5 лет</h2>
             </div>
             <div class="team__info">
                 <div class="team__image">
-                    <img src="./img/brigade.png" alt="image">
+                    <img src="./img/brigade.png" alt="image" width="640">
                 </div>
                 <div class="team__text">
                     <div class="team__block">
@@ -428,37 +435,41 @@
             <div class="work__main-subtitle">
                 <p>Сейчас в работе 130 обьектов. Узнать о них подробнее вы можете на <span>Карте обьектов.</span></p>
             </div>
-            <div class="work__info">
-                <div class="work__image work__image-1">
-                    <div class="decoration__block">
-                        <p>S = 150 м2</p>
-                        <p>$ = 9000 ₽/м2</p>
+            <div class="work__slider-wrapper">
+                <img src="./img/leftArrow-icon.png" alt="icon" class="work__slider-left-icon">
+                <div class="work__info work__slider-inner">
+                    <div class="work__image work__image-1">
+                        <div class="decoration__block">
+                            <p>S = 150 м2</p>
+                            <p>$ = 9000 ₽/м2</p>
+                        </div>
+                    </div>
+                    <div class="work__image work__image-2"></div>
+                    <div class="work__text">
+                        <div class="work__title">
+                            <p>Oсобенности обьекта</p>
+                        </div>
+                        <div class="work__subtitle">
+                            <p>Проводим <strong>капитальный ремонт</strong> с реконструкцией кровли, заменой окон и т.д.</p>
+                        </div>
+                        <div class="work__title work__title-2">
+                            <p>Какие работы выполнены:</p>
+                        </div>
+                        <div class="work__list">
+                            <ul>
+                                <li>Наименование пункта работ</li>
+                                <li>Наименование пункта работ</li>
+                                <li>Наименование пункта работ</li>
+                                <li>Наименование пункта работ</li>
+                                <li>Наименование пункта работ</li>
+                            </ul>
+                        </div>
+                        <div class="work__review">
+                            <p>Отзыв:</p>
+                        </div>
                     </div>
                 </div>
-                <div class="work__image work__image-2"></div>
-                <div class="work__text">
-                    <div class="work__title">
-                        <p>Oсобенности обьекта</p>
-                    </div>
-                    <div class="work__subtitle">
-                        <p>Проводим <strong>капитальный ремонт</strong> с реконструкцией кровли, заменой окон и т.д.</p>
-                    </div>
-                    <div class="work__title work__title-2">
-                        <p>Какие работы выполнены:</p>
-                    </div>
-                    <div class="work__list">
-                        <ul>
-                            <li>Наименование пункта работ</li>
-                            <li>Наименование пункта работ</li>
-                            <li>Наименование пункта работ</li>
-                            <li>Наименование пункта работ</li>
-                            <li>Наименование пункта работ</li>
-                        </ul>
-                    </div>
-                    <div class="work__review">
-                        <p>Отзыв:</p>
-                    </div>
-                </div>
+                <img src="./img/leftArrow-icon.png" alt="icon" class="work__slider-right-icon">
             </div>
 
             <div class="work__modal">
@@ -469,18 +480,18 @@
                     <p>Мы готовы организовать вам просмотр наших обьектов и общение с хозяевами.</p>
                 </div>
                 <div class="work__modal-info">
-                    <form action="" class="work__form">
+                    <form action="get" class="work__form">
                         <div class="work__modal-input">
                             <img src="./img/phone-icon.png" alt="icon">
                             <input type="text" placeholder="Ваш номер телефона">
                         </div>
                         <div class="work__modal-button">
-                            <img src="./img/headerHouse-icon.png" alt="icon">
+                            <img src="./img/headerHouse-icon.png" alt="icon" width="100">
                             <button type="submit">Записаться на просмотр обьектов</button>
                         </div>
                     </form>
                     <div class="work__modal-image">
-                        <img src="./img/smartphone.png" alt="phone image">
+                        <img src="./img/smartphone.png" alt="phone image" width="330">
                     </div>
                 </div>
             </div>
@@ -503,6 +514,8 @@
     </section>
 
     <section class="system">
+        <img src="./img/a4.png" alt="image" class="a4-image decor-image" width="300"> 
+        <img src="./img/smartphone2.png" alt="image" class="smartphone2-image decor-image" width="250">
         <div class="container">
             <div class="system__main-title">
                 <h2>У нас работает 4-уровневая система контроля</h2>
@@ -581,73 +594,73 @@
                 <p>Сроки устанавливаются для каждого проекта индивидуально. Они закрепляются в договоре и мы всегда четко их соблюдаем.</p>
             </div>
             <div class="rate__info">
-                <div class="info__block">
-                    <p class="info__title">Косметический</p>
-                    <div class="info__image">
-                        <img src="./img/cosmetic-img.png" alt="img">
+                <div class="rate__block">
+                    <p class="rate__title">Косметический</p>
+                    <div class="rate__image">
+                        <img src="./img/cosmetic-img.png" alt="img" width="300">
                     </div>
-                    <p class="info__text">Когда нужно обновить обстановку</p>
-                    <p class="info__text">Отлично подходит перед сдачей квартиры</p>
-                    <div class="info__border"></div>
-                    <p class="info__price">От 2500 рублей за м2</p>
-                    <div class="info__button">
+                    <p class="rate__text">Когда нужно обновить обстановку</p>
+                    <p class="rate__text">Отлично подходит перед сдачей квартиры</p>
+                    <div class="rate__border"></div>
+                    <p class="rate__price">От 2500 рублей за м2</p>
+                    <div class="rate__button">
                         <a href="#">Рассчитать стоимость ремонта</a>
                     </div>
-                    <div class="info__link">
+                    <div class="rate__link">
                         <img src="./img/view-icon.png" alt="icon">
                         <p>Смотреть примеры наших работ</p>
                     </div>
-                    <div class="info__border"></div>
-                    <div class="info__gift">
-                        <img src="./img/gift-icon.png" alt="icon">
+                    <div class="rate__border"></div>
+                    <div class="rate__gift">
+                        <img src="./img/gift-icon.png" alt="icon" width="50">
                         <p>Профессиональный клининг в подарок</p>
                     </div>
                 </div>
 
-                <div class="info__block">
-                    <p class="info__title">Дизайнерский</p>
-                    <div class="info__image">
-                        <img src="./img/design-img.png" alt="img">
+                <div class="rate__block">
+                    <p class="rate__title">Дизайнерский</p>
+                    <div class="rate__image">
+                        <img src="./img/design-img.png" alt="img" width="300">
                     </div>
-                    <p class="info__text">Для тех, кто хочет создать индивидуальное пространство для комфортной жизни</p>
-                    <div class="info__border"></div>
-                    <p class="info__price info__price-2">Индивидуальный расчет стоимости</p>
-                    <div class="info__button">
+                    <p class="rate__text">Для тех, кто хочет создать индивидуальное пространство для комфортной жизни</p>
+                    <div class="rate__border"></div>
+                    <p class="rate__price info__price-2">Индивидуальный расчет стоимости</p>
+                    <div class="rate__button">
                         <a href="#">Рассчитать стоимость ремонта</a>
                     </div>
-                    <div class="info__link">
+                    <div class="rate__link">
                         <img src="./img/view-icon.png" alt="icon">
                         <p>Смотреть примеры наших работ</p>
                     </div>
-                    <div class="info__border"></div>
-                    <div class="info__gift">
+                    <div class="rate__border"></div>
+                    <div class="rate__gift">
                         <img src="./img/gift-icon.png" alt="icon">
                         <p>Профессиональный клининг в подарок</p>
                     </div>
-                    <div class="info__gift">
-                        <img src="./img/gift-icon.png" alt="icon">
+                    <div class="rate__gift">
+                        <img src="./img/gift-icon.png" alt="icon" width="50">
                         <p>Спецификация и подбор чистовых материалов в подарок</p>
                     </div>
                 </div>
 
-                <div class="info__block">
-                    <p class="info__title">Капитальный</p>
-                    <div class="info__image">
-                        <img src="./img/kapital-img.png" alt="img">
+                <div class="rate__block">
+                    <p class="rate__title">Капитальный</p>
+                    <div class="rate__image">
+                        <img src="./img/kapital-img.png" alt="img" width="300">
                     </div>
-                    <p class="info__text">Для полного ремонта квартиры под ключ</p>
-                    <div class="info__border"></div>
-                    <p class="info__price info__price-3">От 7000 рублей за м2</p>
-                    <div class="info__button">
+                    <p class="rate__text">Для полного ремонта квартиры под ключ</p>
+                    <div class="rate__border"></div>
+                    <p class="rate__price info__price-3">От 7000 рублей за м2</p>
+                    <div class="rate__button">
                         <a href="#">Рассчитать стоимость ремонта</a>
                     </div>
-                    <div class="info__link">
-                        <img src="./img/view-icon.png" alt=""icon>
+                    <div class="rate__link">
+                        <img src="./img/view-icon.png" alt="icon">
                         <p>Смотреть примеры наших работ</p>
                     </div>
-                    <div class="info__border"></div>
-                    <div class="info__gift">
-                        <img src="./img/gift-icon.png" alt="icon">
+                    <div class="rate__border"></div>
+                    <div class="rate__gift">
+                        <img src="./img/gift-icon.png" alt="icon" width="50">
                         <p>Профессиональный клининг в подарок</p>
                     </div>
                 </div>
@@ -720,7 +733,7 @@
                 </div>
             </div>
             <div class="sales__main-button">
-                <img src="./img/giftThree-icon.png" alt="icon">
+                <img src="./img/giftThree-icon.png" alt="icon" width="60">
                 <a href="#">Открыть все спецпредложения</a>
             </div>
         </div>
@@ -733,7 +746,7 @@
                 </div>
                 <div class="modal__info">
                     <div class="modal__image">
-                        <img src="./img/man2.png" alt="man">
+                        <img src="./img/man2.png" alt="man" width="460">
                     </div>
                     <div class="modal__text">
                         <div class="modal__list">
@@ -761,11 +774,11 @@
                         </div>
                         <div class="modal__button">
                             <img src="./img/calculator-icon.png" alt="icon">
-                            <a href="#">Рассчитать стоимость и сроки</a>
+                            <button type="submit">Рассчитать стоимость и сроки</button>
                         </div>
                         <div class="modal__agree">
-                            <input type="checkbox">
-                            <p>Я даю согласие на обработку своих персональных данных согласно политике конфиденциальности</p>
+                            <input type="checkbox" id="checkbox-input">
+                            <label for="checkbox-input">Я даю согласие на обработку своих персональных данных согласно политике конфиденциальности</label>
                         </div>
                     </div>
                 </div>
@@ -774,6 +787,7 @@
     </section>
 
     <footer class="footer">
+        <img src="./img/lamp.png" alt="image" class="footer__lamp decor-image" width="100">
         <div class="container">
             <div class="footer__block-1">
                 <img src="./img/logo.png" alt="logo">
